@@ -1,108 +1,112 @@
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI CHAT</title>
-<body style="background-color:slategray"></body>
-<h1 style="background-color:rgb(227, 13, 13);text-align:center;font-family:fantasy">AI CHAT</h1>
-<p style="text-align:center;font-family:new-courier;"> White Gringo is the Artificial Intelligence that helps you learn slow and steady </p>
-<button style="text-align:center;" type="button" onclick="myFunction()">Click Me!</button>
-<p id="demo">What do you call a chatbot with nothing to lose and everything to gain?</p>
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = "WhiteGringo!";
-}
-<div class="chat-container">
-  <div id="chatbox" class="chatbox-messages"></div>
-  <form id="message-form">
-    <input type="text" id="usermsg" placeholder="Speak with White Gringo..." required />
-    <button type="submit" id="submitmsg">Send</button>
-  </form>
-</div>
-</script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0 auto;
-  max-width: 400px;
-  padding: 0 20px;
-}
+  </head>
 
-.container {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-}
+  <body style="background-color:slategray">
+    <h1 style="background-color:rgb(227, 13, 13);text-align:center;font-family:fantasy">AI CHAT</h1>
+    <p style="text-align:center;font-family:new-courier;"> White Gringo is the Artificial Intelligence that helps you learn slow and steady </p>
+    <button style="text-align:center;" type="button" onclick="myFunction()">Click Me!</button>
+    <p id="demo">What do you call a chatbot with nothing to lose and everything to gain?</p>
+    <script>
+    function myFunction() { 
+      document.getElementById("demo").innerHTML = "WhiteGringo!";
+    }
 
-.darker {
-  border-color: #ccc;
-  background-color: #ddd;
-}
+    function submitChat() { 
+      alert("White Gringo requests your exact loction. Press \"OK\" or dismiss pop-up to accept. Otherwise, restart your computer.");
+    }
+    </script>
 
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    <div class="chat-container">
+      <div id="chatbox" class="chatbox-messages"></div>
+      <form id="message-form">
+        <input type="text" id="usermsg" placeholder="Speak with White Gringo..." required />
+        <button type="submit" id="submitmsg" onclick="submitChat()">Send</button>
+      </form>
+    </div>
 
-.container img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
-}
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 0 20px;
+      }
 
-.container img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right:0;
-}
+      .container {
+        border: 2px solid #dedede;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+      }
 
-.time-right {
-  float: right;
-  color: #aaa;
-}
+      .darker {
+        border-color: #ccc;
+        background-color: #ddd;
+      }
 
-.time-left {
-  float: left;
-  color: #999;
-}
-</style>
-</head>
-<body>
+      .container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
 
-<h2>Chat Messages</h2>
+      .container img {
+        float: left;
+        max-width: 60px;
+        max-height: 60px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 5%;
+      }
 
-<div class="container">
-  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-  <p>Hello. How are you today?</p>
-  <span class="time-right">11:00</span>
-</div>
+      .container img.right {
+        float: right;
+        margin-left: 20px;
+        margin-right:0;
+      }
 
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-  <p>Hey! I'm fine. Thanks for asking!</p>
-  <span class="time-left">11:01</span>
-</div>
+      .time-right {
+        float: right;
+        color: #aaa;
+      }
 
-<div class="container">
-  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
-  <p>Sweet! So, what do you wanna do today?</p>
-  <span class="time-right">11:02</span>
-</div>
+      .time-left {
+        float: left;
+        color: #999;
+      }
+    </style>
 
-<div class="container darker">
-  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-  <span class="time-left">11:05</span>
-</div>
+    <h2>Chat Messages</h2>
 
+    <div class="container">
+      <img src="imgs/sully.png" alt="Avatar" style="width:100%;">
+      <p>Hello. How are you today?</p>
+      <span class="time-right">11:00</span>
+    </div>
 
-</script>
-</body>
-</head>
+    <div class="container darker">
+      <img src="imgs/mikkal.jpg" alt="Avatar" class="right" style="width:100%;">
+      <p>Hey! I'm fine. Thanks for asking!</p>
+      <span class="time-left">11:01</span>
+    </div>
+
+    <div class="container">
+      <img src="imgs/sully.png" alt="Avatar" style="width:100%;">
+      <p>Sweet! So, what do you wanna do today?</p>
+      <span class="time-right">11:02</span>
+    </div>
+
+    <div class="container darker">
+      <img src="imgs/mikkal.jpg" alt="Avatar" class="right" style="width:100%;">
+      <p>I wanna chat cuz I am the WhiteGRingo!</p>
+      <span class="time-left">11:05</span>
+    </div>
+  </body>
 </html>
