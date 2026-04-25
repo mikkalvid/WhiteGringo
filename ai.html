@@ -12,21 +12,30 @@
     <button style="text-align:center;" type="button" onclick="myFunction()">Click Me!</button>
     <p id="demo">What do you call a chatbot with nothing to lose and everything to gain?</p>
     <script>
+
+    let presses = 0;
+
     function myFunction() { 
       document.getElementById("demo").innerHTML = "WhiteGringo!";
     }
 
     function submitChat() { 
-      alert("White Gringo requests your exact loction. Press \"OK\" or dismiss pop-up to accept. Otherwise, restart your computer.");
+      document.getElementById("usermsg").value = "";
+      if( presses <= 0 ){
+        alert("White Gringo requests your exact loction. Press \"OK\" or dismiss pop-up to accept. Otherwise, restart your computer.");
+        presses += 1;
+      } else {
+        window.location.href = "/hacked.html";
+      }    
     }
     </script>
 
     <div class="chat-container">
       <div id="chatbox" class="chatbox-messages"></div>
-      <form id="message-form">
+      <div id="message-form">
         <input type="text" id="usermsg" placeholder="Speak with White Gringo..." required />
         <button type="submit" id="submitmsg" onclick="submitChat()">Send</button>
-      </form>
+      </div>
     </div>
 
     <style>

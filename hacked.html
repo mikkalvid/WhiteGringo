@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your iPhone has been compromised by White Gringo</title>
+  </head>
+
+  <body>
+    <h1>WHITE GRINGO IS HACKING U!!!</h1>
+    <p>Your iPhone connections was hacked and someones is tracking u!!!! Do not close this page >:|. 
+      If u do not resolve within two minutes, White Gringo will reveel ur identity and will send your browsing history and frontal camera photos to YOUR MOM!!</p>
+    <p id="time" style="text-align:center;color:#ff0000"></p>
+    <h2>How to appease The Gringo:</h2>
+    <ol>
+      <li>Send $11 USD in a marked envelope to 101 Chalupsky Ave SE, New Prague, MN 56071. Small bills. They'll know what to do.</li>
+      <li>Go to the App Store</li>
+      <li>Install HayDay.</li>
+      <li>Add xXWyteGrng0Xx.</li>
+      <li>Trade with him.</li>
+    </ol>
+    <img src="imgs/phone.jpg" alt="phone" width="500" height="500"> 
+
+    <script>
+
+      function formatTime(seconds) {
+          const mins = Math.floor(seconds / 60);
+          const secs = seconds % 60;
+          return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      }
+
+      let timeLeft = 120; // Starting time in seconds
+
+      const timer = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(timer); // Stop the timer when it reaches 0
+        } else {
+          document.getElementById("time").innerHTML = formatTime(timeLeft);
+          timeLeft--; // Decrement the time value
+        }
+      }, 1000); // 1000ms = 1 second
+    </script>
+
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0 20px;
+      }
+
+      h1 {
+        color: #ff0000;
+        text-align: center;
+      }
+
+      h2 {
+        color: #ff0000;
+      }
+    </style>
+  </body>
+</html>
